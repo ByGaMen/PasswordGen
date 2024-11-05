@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Password Generetor</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="password_main">
+            <header>Password generator</header>
+            <div class="password_output">
+                <p class="output" onclick="copyOnClick()" onmouseover="revealHidden()" onmouseout="hideHidden()"></p>
+                <div class="password_button" onmouseover="revealHidden()" onmouseout="hideHidden()"></div>
+            </div>
+            <div class="password_config">
+                <header>Сustomize your password</header>
+                <div class="password_input">
+                    <input type="number" class="length_config" value="6" min="5" max="20">
+                    <div class="checkbox_configuration">
+                        <label>
+                            <input type="checkbox" name="checkbox_data" value="numbers" checked>
+                            Numbers
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox_data" value="lowerCaseaLetters">
+                            Lower Case Letters
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox_data" value="upperCaseLetters">
+                            Upper Case Letters
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox_data" value="symbols">
+                            Symbols
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="tooltip">Click to Copy</div>
+</body>
+<script src="index.js"></script>
+
+</html>

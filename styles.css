@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D2D0BA;
+    font-family: Arial, sans-serif;
+}
+
+.password_main {
+    background-color: #7B9E87;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 12px;
+}
+
+header {
+    text-align: center;
+    padding: .5rem;
+}
+
+.password_output {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E5C1BD;
+    padding: .5rem;
+    margin: 0 .8rem .5rem .8rem;
+    border-radius: .6rem;
+}
+
+.output {
+    cursor: pointer;
+}
+
+.password_button {
+
+    width: 16px;
+    height: 16px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CjxwYXRoIGQ9Ik0gMTUgMyBDIDEyLjAzMTM5OCAzIDkuMzAyODIwMiA0LjA4MzQzODQgNy4yMDcwMzEyIDUuODc1IEEgMS4wMDAxIDEuMDAwMSAwIDEgMCA4LjUwNTg1OTQgNy4zOTQ1MzEyIEMgMTAuMjU0MDcgNS45MDAwOTI5IDEyLjUxNjYwMiA1IDE1IDUgQyAyMC4xOTY1NiA1IDI0LjQ1MDk4OSA4LjkzNzkyNjcgMjQuOTUxMTcyIDE0IEwgMjIgMTQgTCAyNiAyMCBMIDMwIDE0IEwgMjYuOTQ5MjE5IDE0IEMgMjYuNDM3OTI1IDcuODUxNjU4OCAyMS4yNzc4MzkgMyAxNSAzIHogTSA0IDEwIEwgMCAxNiBMIDMuMDUwNzgxMiAxNiBDIDMuNTYyMDc1IDIyLjE0ODM0MSA4LjcyMjE2MDcgMjcgMTUgMjcgQyAxNy45Njg2MDIgMjcgMjAuNjk3MTggMjUuOTE2NTYyIDIyLjc5Mjk2OSAyNC4xMjUgQSAxLjAwMDEgMS4wMDAxIDAgMSAwIDIxLjQ5NDE0MSAyMi42MDU0NjkgQyAxOS43NDU5MyAyNC4wOTk5MDcgMTcuNDgzMzk4IDI1IDE1IDI1IEMgOS44MDM0NCAyNSA1LjU0OTAxMDkgMjEuMDYyMDc0IDUuMDQ4ODI4MSAxNiBMIDggMTYgTCA0IDEwIHoiPjwvcGF0aD4KPC9zdmc+') 50% 50% no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.password_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.length_config {
+    align-self: flex-start;
+    width: 3rem;
+    height: 1.2rem;
+    border: 1px solid green;
+}
+
+.checkbox_configuration {
+    display: flex;
+    flex-direction: column;
+}
+
+.tooltip {
+    position: absolute;
+    left: 73%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    padding: .2rem;
+    width: auto;
+    height: 1.3rem;
+    background-color: #F3E4E2;
+    font-size: .8rem;
+    text-align: center;
+    border-radius: .4rem;
+    opacity: 0;
+    transition: opacity 500ms;
+}
